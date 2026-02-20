@@ -24,7 +24,7 @@ const ReviewCard = ({ item, index }: ReviewProps) => {
   return (
     <motion.div
       className={cn("bg-white dark:bg-neutral-900 rounded-xl flex flex-col p-6 border max-lg:basis-90 max-sm:basis-80 shrink-0 dark:border-neutral-800      border-neutral-200 hover:border-amber-100 dark:hover:border-amber-400/20",
-        index === 1 && '-translate-y-5'
+        index === 1 && 'lg:-translate-y-5'
       )}
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
