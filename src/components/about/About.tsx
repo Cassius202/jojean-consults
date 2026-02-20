@@ -4,7 +4,7 @@ import Stats from "./Stats"
 
 const About = () => {
   return (
-    <section id='about' className="w-full bg-white dark:bg-gray-900/40 max-w-screen pt-25 max-lg:pt-15 px-3 sm:px-5 md:px-10 lg:px-20 pb-15">
+    <section id='about' className="w-full bg-white dark:bg-gray-900/40 max-w-screen pt-25 max-lg:pt-15 pt-50 px-3 sm:px-5 md:px-10 lg:px-20 pb-15">
       <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
 
         {/* Image side */}

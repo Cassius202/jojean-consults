@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Service = () => {
   return (
-    <section className="w-full mb-15 pt-20 max-lg:pt-12 px-4 sm:px-6 md:px-10 lg:px-20">
+    <section className="w-full mb-15 pt-20 max-lg:pt-14 px-4 sm:px-6 md:px-10 lg:px-20">
       <div className="flex flex-col lg:grid lg:grid-cols-[40%_55%] lg:gap-[5%] items-center">
 
         {/* Image */}

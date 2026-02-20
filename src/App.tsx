@@ -8,6 +8,8 @@ import Reviews from './components/reviews/Reviews';
 import Footer from './components/footer/Footer';
 import About from './components/about/About';
 import SideBar from './components/sidebar/SideBar';
+import { Toaster } from 'react-hot-toast';
+import Contact from './components/contact/Contact';
 
 const App = () => {
   const { isDark } = useThemeStore();
@@ -18,6 +20,7 @@ const App = () => {
 
   return (
     <div className="app min-h-screen max-w-screen overflow-x-hidden flex flex-col bg-neutral-50 dark:bg-neutral-950">
+      <Toaster reverseOrder={false} position='bottom-left' />
       <SideBar />
       <Header />
       <Hero />
@@ -25,6 +28,10 @@ const App = () => {
       <Service />
       <Solutions />
       <Reviews />
+
+      {/* contact  */}
+      <Contact />
+      {/* footer  */}
       <Footer />
     </div>
   )

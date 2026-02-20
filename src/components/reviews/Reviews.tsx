@@ -20,7 +20,7 @@ const Reviews = () => {
       <div>
         <div className="heading flex flex-col items-center mb-10">
           <motion.h1
-            className="text-2xl lg:text-3xl text-center dark:text-stone-50 font-bold max-w-md"
+            className="text-3xl lg:text-4xl xl:text-5xl text-center dark:text-stone-50 font-bold max-w-md lg:max-w-lg"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

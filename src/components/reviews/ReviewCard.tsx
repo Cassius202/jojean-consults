@@ -1,6 +1,7 @@
 import { motion } from "motion/react"
 import type { Review } from '../../assets/interfaces'
 import { assets } from "../../assets/assets";
+import { cn } from "../../utils/cn";
 
 interface ReviewProps {
   item: Review;
@@ -22,8 +23,9 @@ const StarRating = ({ rating }: { rating: number }) => {
 const ReviewCard = ({ item, index }: ReviewProps) => {
   return (
     <motion.div
-      className="bg-white dark:bg-neutral-900 rounded-xl flex flex-col p-6 border max-lg:basis-90 max-sm:basis-80 shrink-0 dark:border-neutral-800 
-      border-neutral-200 hover:border-amber-100 dark:hover:border-amber-400/20"
+      className={cn("bg-white dark:bg-neutral-900 rounded-xl flex flex-col p-6 border max-lg:basis-90 max-sm:basis-80 shrink-0 dark:border-neutral-800      border-neutral-200 hover:border-amber-100 dark:hover:border-amber-400/20",
+        index === 1 && '-translate-y-5'
+      )}
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}

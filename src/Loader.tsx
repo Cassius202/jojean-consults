@@ -30,7 +30,7 @@ const Loader = () => {
           transition={{ duration: 0.3, ease: "easeInOut" }}
         >
           {/* Subtle radial glow behind logo */}
-          <div
+          {/* <div
             className="absolute inset-0 pointer-events-none"
             aria-hidden="true"
             style={{
@@ -38,7 +38,7 @@ const Loader = () => {
                 ? "radial-gradient(ellipse 40% 30% at 50% 50%, rgba(22,163,74,0.08) 0%, transparent 70%)"
                 : "radial-gradient(ellipse 40% 30% at 50% 50%, rgba(22,163,74,0.06) 0%, transparent 70%)",
             }}
-          />
+          /> */}
 
           <div className="relative flex flex-col items-center gap-y-5 animate-[loaderIn_0.5s_ease-out_both]">
             {/* Logo */}
